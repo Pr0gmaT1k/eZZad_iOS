@@ -1,0 +1,15 @@
+PODS:
+  - GLMap (0.8.4)
+  - GLMapSwift (0.8.4):
+    - GLMap (= 0.8.4)
+
+DEPENDENCIES:
+  - GLMapSwift (~> 0.8)
+
+SPEC CHECKSUMS:
+  GLMap: 2cbac67aca9cfe8aaa0ca47c8a27a124ef103d6e
+  GLMapSwift: d295a47570eb3bc4bf516c0453dbbac165c7ebc4
+
+PODFILE CHECKSUM: e6846bf5c80d7fe07969479742bbb5292bb2a7aa
+
+COCOAPODS: 1.2.0

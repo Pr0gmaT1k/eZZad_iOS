@@ -1,0 +1,6 @@
+framework module GLMap {
+  umbrella header "GLMap.h"
+
+  export *
+  module * { export * }
+}

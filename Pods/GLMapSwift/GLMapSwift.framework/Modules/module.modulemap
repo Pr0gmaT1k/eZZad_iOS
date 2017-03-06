@@ -1,0 +1,3 @@
+framework module GLMapSwift {
+    header "GLMapSwift-Swift.h"
+}

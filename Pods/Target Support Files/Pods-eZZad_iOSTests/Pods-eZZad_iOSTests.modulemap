@@ -1,0 +1,6 @@
+framework module Pods_eZZad_iOSTests {
+  umbrella header "Pods-eZZad_iOSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

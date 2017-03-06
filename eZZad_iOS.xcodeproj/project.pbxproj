@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6DA3AA280956786E9635703A /* Pods_eZZad_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4483D5EF2362E483F114CC92 /* Pods_eZZad_iOSTests.framework */; };
+		B8393D13021CADD41AFE066D /* Pods_eZZad_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D8396CCE9FD66C1163B248 /* Pods_eZZad_iOSUITests.framework */; };
 		BAE244B01E6CDD5C0014E833 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE244AF1E6CDD5C0014E833 /* AppDelegate.swift */; };
 		BAE244B21E6CDD5C0014E833 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE244B11E6CDD5C0014E833 /* ViewController.swift */; };
 		BAE244B51E6CDD5C0014E833 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAE244B31E6CDD5C0014E833 /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		BAE244BA1E6CDD5C0014E833 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAE244B81E6CDD5C0014E833 /* LaunchScreen.storyboard */; };
 		BAE244C51E6CDD5C0014E833 /* eZZad_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE244C41E6CDD5C0014E833 /* eZZad_iOSTests.swift */; };
 		BAE244D01E6CDD5C0014E833 /* eZZad_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE244CF1E6CDD5C0014E833 /* eZZad_iOSUITests.swift */; };
+		D38E1A5309EB07AD6D6D096D /* Pods_eZZad_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A3D886FA72DA63649BAD6D /* Pods_eZZad_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F3F0BF93C3C5FD83D92EBE9 /* Pods-eZZad_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eZZad_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-eZZad_iOS/Pods-eZZad_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		4483D5EF2362E483F114CC92 /* Pods_eZZad_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eZZad_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F079E13E0834E0E2CBE668C /* Pods-eZZad_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eZZad_iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-eZZad_iOSTests/Pods-eZZad_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		863317413DD7A4759201F2D6 /* Pods-eZZad_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eZZad_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eZZad_iOS/Pods-eZZad_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		A2CDA0BC92E7F746C4E94C3F /* Pods-eZZad_iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eZZad_iOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-eZZad_iOSUITests/Pods-eZZad_iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B9D8396CCE9FD66C1163B248 /* Pods_eZZad_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eZZad_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE244AC1E6CDD5C0014E833 /* eZZad_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eZZad_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE244AF1E6CDD5C0014E833 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAE244B11E6CDD5C0014E833 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +56,9 @@
 		BAE244CB1E6CDD5C0014E833 /* eZZad_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eZZad_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE244CF1E6CDD5C0014E833 /* eZZad_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eZZad_iOSUITests.swift; sourceTree = "<group>"; };
 		BAE244D11E6CDD5C0014E833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C018A1C0AF85097E9FC185B4 /* Pods-eZZad_iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eZZad_iOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eZZad_iOSUITests/Pods-eZZad_iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C0A3D886FA72DA63649BAD6D /* Pods_eZZad_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eZZad_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB1B564FA075FD84ED00C4ED /* Pods-eZZad_iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eZZad_iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eZZad_iOSTests/Pods-eZZad_iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D38E1A5309EB07AD6D6D096D /* Pods_eZZad_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DA3AA280956786E9635703A /* Pods_eZZad_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8393D13021CADD41AFE066D /* Pods_eZZad_iOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5EAD03ED38456063A079CE70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0A3D886FA72DA63649BAD6D /* Pods_eZZad_iOS.framework */,
+				4483D5EF2362E483F114CC92 /* Pods_eZZad_iOSTests.framework */,
+				B9D8396CCE9FD66C1163B248 /* Pods_eZZad_iOSUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7FB9CCE09175F1F07124FF8B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				863317413DD7A4759201F2D6 /* Pods-eZZad_iOS.debug.xcconfig */,
+				0F3F0BF93C3C5FD83D92EBE9 /* Pods-eZZad_iOS.release.xcconfig */,
+				FB1B564FA075FD84ED00C4ED /* Pods-eZZad_iOSTests.debug.xcconfig */,
+				5F079E13E0834E0E2CBE668C /* Pods-eZZad_iOSTests.release.xcconfig */,
+				C018A1C0AF85097E9FC185B4 /* Pods-eZZad_iOSUITests.debug.xcconfig */,
+				A2CDA0BC92E7F746C4E94C3F /* Pods-eZZad_iOSUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BAE244A31E6CDD5C0014E833 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +119,8 @@
 				BAE244C31E6CDD5C0014E833 /* eZZad_iOSTests */,
 				BAE244CE1E6CDD5C0014E833 /* eZZad_iOSUITests */,
 				BAE244AD1E6CDD5C0014E833 /* Products */,
+				7FB9CCE09175F1F07124FF8B /* Pods */,
+				5EAD03ED38456063A079CE70 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAE244D41E6CDD5C0014E833 /* Build configuration list for PBXNativeTarget "eZZad_iOS" */;
 			buildPhases = (
+				2B486C3AC7824DEFD1D1CE29 /* [CP] Check Pods Manifest.lock */,
 				BAE244A81E6CDD5C0014E833 /* Sources */,
 				BAE244A91E6CDD5C0014E833 /* Frameworks */,
 				BAE244AA1E6CDD5C0014E833 /* Resources */,
+				C4EEBD68EB0C0B11EADBD3F9 /* [CP] Embed Pods Frameworks */,
+				0A80E86BAEDD29A2D3044CF0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAE244D71E6CDD5C0014E833 /* Build configuration list for PBXNativeTarget "eZZad_iOSTests" */;
 			buildPhases = (
+				15B5C1E046B0BE4BF62A3B35 /* [CP] Check Pods Manifest.lock */,
 				BAE244BC1E6CDD5C0014E833 /* Sources */,
 				BAE244BD1E6CDD5C0014E833 /* Frameworks */,
 				BAE244BE1E6CDD5C0014E833 /* Resources */,
+				94C0482879913A82C891062B /* [CP] Embed Pods Frameworks */,
+				A81C0D83B69E473B90B02139 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAE244DA1E6CDD5C0014E833 /* Build configuration list for PBXNativeTarget "eZZad_iOSUITests" */;
 			buildPhases = (
+				C955B4ED01D338E546F0D69F /* [CP] Check Pods Manifest.lock */,
 				BAE244C71E6CDD5C0014E833 /* Sources */,
 				BAE244C81E6CDD5C0014E833 /* Frameworks */,
 				BAE244C91E6CDD5C0014E833 /* Resources */,
+				45B0E6A5405EC37E89BF1BC5 /* [CP] Embed Pods Frameworks */,
+				A95BF5F2A66D446E9F164597 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +302,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A80E86BAEDD29A2D3044CF0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eZZad_iOS/Pods-eZZad_iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		15B5C1E046B0BE4BF62A3B35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2B486C3AC7824DEFD1D1CE29 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		45B0E6A5405EC37E89BF1BC5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eZZad_iOSUITests/Pods-eZZad_iOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94C0482879913A82C891062B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eZZad_iOSTests/Pods-eZZad_iOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A81C0D83B69E473B90B02139 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eZZad_iOSTests/Pods-eZZad_iOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A95BF5F2A66D446E9F164597 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eZZad_iOSUITests/Pods-eZZad_iOSUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4EEBD68EB0C0B11EADBD3F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eZZad_iOS/Pods-eZZad_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C955B4ED01D338E546F0D69F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BAE244A81E6CDD5C0014E833 /* Sources */ = {
@@ -410,6 +597,7 @@
 		};
 		BAE244D51E6CDD5C0014E833 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 863317413DD7A4759201F2D6 /* Pods-eZZad_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = eZZad_iOS/Info.plist;
@@ -422,6 +610,7 @@
 		};
 		BAE244D61E6CDD5C0014E833 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F3F0BF93C3C5FD83D92EBE9 /* Pods-eZZad_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = eZZad_iOS/Info.plist;
@@ -434,6 +623,7 @@
 		};
 		BAE244D81E6CDD5C0014E833 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB1B564FA075FD84ED00C4ED /* Pods-eZZad_iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -448,6 +638,7 @@
 		};
 		BAE244D91E6CDD5C0014E833 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F079E13E0834E0E2CBE668C /* Pods-eZZad_iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -462,6 +653,7 @@
 		};
 		BAE244DB1E6CDD5C0014E833 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C018A1C0AF85097E9FC185B4 /* Pods-eZZad_iOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = eZZad_iOSUITests/Info.plist;
@@ -475,6 +667,7 @@
 		};
 		BAE244DC1E6CDD5C0014E833 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2CDA0BC92E7F746C4E94C3F /* Pods-eZZad_iOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = eZZad_iOSUITests/Info.plist;
