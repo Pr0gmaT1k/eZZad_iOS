@@ -1,0 +1,3 @@
+[submodule "eZZad_Common"]
+	path = eZZad_Common
+	url = https://github.com/Pr0gmaT1k/eZZad_Common
