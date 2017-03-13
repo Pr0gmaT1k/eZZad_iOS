@@ -18,19 +18,14 @@ class ViewController: UIViewController, MKMapViewDelegate {
     super.viewDidLoad()
     self.mapView.delegate = self
     
-    let location = CLLocationCoordinate2D(
-      latitude: 47.346471,
-      longitude: -1.720943
-    )
+    //Center map
+    let center = CLLocationCoordinate2D(latitude: 47.346471, longitude: -1.720943)
+    let viewRegion : MKCoordinateRegion = MKCoordinateRegionMakeWithDistance(center, 2000, 2000);
+    let adjustedRegion : MKCoordinateRegion = self.mapView.regionThatFits(viewRegion)
+    self.mapView.setRegion(adjustedRegion ,animated:true)
+    self.mapView.showsUserLocation = true
     
-    //SET UP ZOOM
-    let viewRegion : MKCoordinateRegion = MKCoordinateRegionMakeWithDistance(location, 2000, 2000);
-    let adjustedRegion : MKCoordinateRegion = self.mapView.regionThatFits(viewRegion);
-    self.mapView.setRegion(adjustedRegion ,animated:true);
-    self.mapView.showsUserLocation = true;
-    
-    let annotation = MKPointAnnotation()
-    annotation.coordinate = location
+    // Initialise DB
     if let dbPath = Bundle.main.url(forResource: "zad", withExtension: "mbtiles")?.path {
       let overlay = MBtilesOverlay(dbPath: dbPath)
       overlay.canReplaceMapContent = true
