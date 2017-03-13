@@ -7,19 +7,41 @@
 //
 
 import UIKit
+import MapKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+class ViewController: UIViewController, MKMapViewDelegate {
+  // Mark: IBoutlet
+  @IBOutlet private weak var mapView: MKMapView!
+  
+  // Mark: public func
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    self.mapView.delegate = self
+    
+    let location = CLLocationCoordinate2D(
+      latitude: 47.346471,
+      longitude: -1.720943
+    )
+    
+    //SET UP ZOOM
+    let viewRegion : MKCoordinateRegion = MKCoordinateRegionMakeWithDistance(location, 2000, 2000);
+    let adjustedRegion : MKCoordinateRegion = self.mapView.regionThatFits(viewRegion);
+    self.mapView.setRegion(adjustedRegion ,animated:true);
+    self.mapView.showsUserLocation = true;
+    
+    let annotation = MKPointAnnotation()
+    annotation.coordinate = location
+    if let dbPath = Bundle.main.url(forResource: "zad", withExtension: "mbtiles")?.path {
+      let overlay = MBtilesOverlay(dbPath: dbPath)
+      overlay.canReplaceMapContent = true
+      mapView.add(overlay, level: .aboveLabels)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+  }
+  
+  
+  func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+    guard let tileOverlay = overlay as? MKTileOverlay else { return MKOverlayRenderer() }
+    return MKTileOverlayRenderer(tileOverlay: tileOverlay)
+  }
 }
 

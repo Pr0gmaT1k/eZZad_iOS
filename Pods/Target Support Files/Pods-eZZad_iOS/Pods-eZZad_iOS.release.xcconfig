@@ -1,9 +1,8 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/GLMap" "${PODS_ROOT}/GLMapSwift"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/FMDB" "$PODS_CONFIGURATION_BUILD_DIR/sqlite3"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/GLMap" "${PODS_ROOT}/Headers/Public/GLMapSwift"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited)  -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/GLMap" -isystem "${PODS_ROOT}/Headers/Public/GLMapSwift"
-OTHER_LDFLAGS = $(inherited) -framework "GLMap" -framework "GLMapSwift"
+OTHER_CFLAGS = $(inherited) -DFMDB_SQLITE_STANDALONE $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/FMDB/FMDB.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/sqlite3/sqlite3.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "FMDB" -framework "sqlite3"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_ROOT = ${SRCROOT}/Pods

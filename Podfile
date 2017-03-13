@@ -4,7 +4,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'eZZad_iOS' do
-  pod 'GLMapSwift', '~> 0.8'
+  pod 'FMDB/standalone/FTS'
 end
 
 target 'eZZad_iOSTests' do

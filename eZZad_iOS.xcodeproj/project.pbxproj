@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		6DA3AA280956786E9635703A /* Pods_eZZad_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4483D5EF2362E483F114CC92 /* Pods_eZZad_iOSTests.framework */; };
 		B8393D13021CADD41AFE066D /* Pods_eZZad_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D8396CCE9FD66C1163B248 /* Pods_eZZad_iOSUITests.framework */; };
+		BAAA38511E77500100CD8A06 /* MBTileOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAA38501E77500100CD8A06 /* MBTileOverlay.swift */; };
+		BAAA38521E77500100CD8A06 /* MBTileOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAA38501E77500100CD8A06 /* MBTileOverlay.swift */; };
+		BAAA38531E77500100CD8A06 /* MBTileOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAA38501E77500100CD8A06 /* MBTileOverlay.swift */; };
+		BAAA38651E77582900CD8A06 /* zad.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = BAAA38611E77582900CD8A06 /* zad.mbtiles */; };
+		BAAA38661E77582900CD8A06 /* zad.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = BAAA38611E77582900CD8A06 /* zad.mbtiles */; };
+		BAAA38671E77582900CD8A06 /* zad.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = BAAA38611E77582900CD8A06 /* zad.mbtiles */; };
 		BAE244B01E6CDD5C0014E833 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE244AF1E6CDD5C0014E833 /* AppDelegate.swift */; };
 		BAE244B21E6CDD5C0014E833 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE244B11E6CDD5C0014E833 /* ViewController.swift */; };
 		BAE244B51E6CDD5C0014E833 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAE244B31E6CDD5C0014E833 /* Main.storyboard */; };
@@ -43,6 +49,8 @@
 		863317413DD7A4759201F2D6 /* Pods-eZZad_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eZZad_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eZZad_iOS/Pods-eZZad_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		A2CDA0BC92E7F746C4E94C3F /* Pods-eZZad_iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eZZad_iOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-eZZad_iOSUITests/Pods-eZZad_iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B9D8396CCE9FD66C1163B248 /* Pods_eZZad_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eZZad_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAAA38501E77500100CD8A06 /* MBTileOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBTileOverlay.swift; sourceTree = "<group>"; };
+		BAAA38611E77582900CD8A06 /* zad.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = zad.mbtiles; sourceTree = "<group>"; };
 		BAE244AC1E6CDD5C0014E833 /* eZZad_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eZZad_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE244AF1E6CDD5C0014E833 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAE244B11E6CDD5C0014E833 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,9 +120,18 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		BAAA385F1E77582900CD8A06 /* eZZad_Common */ = {
+			isa = PBXGroup;
+			children = (
+				BAAA38611E77582900CD8A06 /* zad.mbtiles */,
+			);
+			path = eZZad_Common;
+			sourceTree = "<group>";
+		};
 		BAE244A31E6CDD5C0014E833 = {
 			isa = PBXGroup;
 			children = (
+				BAAA385F1E77582900CD8A06 /* eZZad_Common */,
 				BAE244AE1E6CDD5C0014E833 /* eZZad_iOS */,
 				BAE244C31E6CDD5C0014E833 /* eZZad_iOSTests */,
 				BAE244CE1E6CDD5C0014E833 /* eZZad_iOSUITests */,
@@ -143,6 +160,7 @@
 				BAE244B61E6CDD5C0014E833 /* Assets.xcassets */,
 				BAE244B81E6CDD5C0014E833 /* LaunchScreen.storyboard */,
 				BAE244BB1E6CDD5C0014E833 /* Info.plist */,
+				BAAA38501E77500100CD8A06 /* MBTileOverlay.swift */,
 			);
 			path = eZZad_iOS;
 			sourceTree = "<group>";
@@ -242,15 +260,18 @@
 				TargetAttributes = {
 					BAE244AB1E6CDD5C0014E833 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					BAE244BF1E6CDD5C0014E833 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = BAE244AB1E6CDD5C0014E833;
 					};
 					BAE244CA1E6CDD5C0014E833 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = BAE244AB1E6CDD5C0014E833;
 					};
@@ -281,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAAA38651E77582900CD8A06 /* zad.mbtiles in Resources */,
 				BAE244BA1E6CDD5C0014E833 /* LaunchScreen.storyboard in Resources */,
 				BAE244B71E6CDD5C0014E833 /* Assets.xcassets in Resources */,
 				BAE244B51E6CDD5C0014E833 /* Main.storyboard in Resources */,
@@ -291,6 +313,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAAA38661E77582900CD8A06 /* zad.mbtiles in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +321,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAAA38671E77582900CD8A06 /* zad.mbtiles in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +472,7 @@
 			files = (
 				BAE244B21E6CDD5C0014E833 /* ViewController.swift in Sources */,
 				BAE244B01E6CDD5C0014E833 /* AppDelegate.swift in Sources */,
+				BAAA38511E77500100CD8A06 /* MBTileOverlay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +481,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAE244C51E6CDD5C0014E833 /* eZZad_iOSTests.swift in Sources */,
+				BAAA38521E77500100CD8A06 /* MBTileOverlay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +490,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAE244D01E6CDD5C0014E833 /* eZZad_iOSUITests.swift in Sources */,
+				BAAA38531E77500100CD8A06 /* MBTileOverlay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +553,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -547,6 +575,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -576,6 +605,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -589,6 +619,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -600,10 +631,14 @@
 			baseConfigurationReference = 863317413DD7A4759201F2D6 /* Pods-eZZad_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = eZZad_iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Pr0gmaT1k.eZZad-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -613,10 +648,13 @@
 			baseConfigurationReference = 0F3F0BF93C3C5FD83D92EBE9 /* Pods-eZZad_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = eZZad_iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Pr0gmaT1k.eZZad-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -627,10 +665,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = eZZad_iOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Pr0gmaT1k.eZZad-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eZZad_iOS.app/eZZad_iOS";
 			};
@@ -642,10 +684,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = eZZad_iOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Pr0gmaT1k.eZZad-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eZZad_iOS.app/eZZad_iOS";
 			};
@@ -656,10 +701,14 @@
 			baseConfigurationReference = C018A1C0AF85097E9FC185B4 /* Pods-eZZad_iOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = eZZad_iOSUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Pr0gmaT1k.eZZad-iOSUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = eZZad_iOS;
 			};
@@ -670,10 +719,13 @@
 			baseConfigurationReference = A2CDA0BC92E7F746C4E94C3F /* Pods-eZZad_iOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = eZZad_iOSUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Pr0gmaT1k.eZZad-iOSUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = eZZad_iOS;
 			};
@@ -698,6 +750,7 @@
 				BAE244D61E6CDD5C0014E833 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BAE244D71E6CDD5C0014E833 /* Build configuration list for PBXNativeTarget "eZZad_iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -706,6 +759,7 @@
 				BAE244D91E6CDD5C0014E833 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BAE244DA1E6CDD5C0014E833 /* Build configuration list for PBXNativeTarget "eZZad_iOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -714,6 +768,7 @@
 				BAE244DC1E6CDD5C0014E833 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

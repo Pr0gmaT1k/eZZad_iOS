@@ -1,15 +1,17 @@
 PODS:
-  - GLMap (0.8.4)
-  - GLMapSwift (0.8.4):
-    - GLMap (= 0.8.4)
+  - FMDB/standalone/FTS (2.6.2):
+    - sqlite3/fts
+  - sqlite3/common (3.17.0)
+  - sqlite3/fts (3.17.0):
+    - sqlite3/common
 
 DEPENDENCIES:
-  - GLMapSwift (~> 0.8)
+  - FMDB/standalone/FTS
 
 SPEC CHECKSUMS:
-  GLMap: 2cbac67aca9cfe8aaa0ca47c8a27a124ef103d6e
-  GLMapSwift: d295a47570eb3bc4bf516c0453dbbac165c7ebc4
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  sqlite3: 3675836c3d675e606507595cf4fd65066b9e11f2
 
-PODFILE CHECKSUM: e6846bf5c80d7fe07969479742bbb5292bb2a7aa
+PODFILE CHECKSUM: d80fcabfe4fc08519eaf9b755100b1b121282bcb
 
 COCOAPODS: 1.2.0

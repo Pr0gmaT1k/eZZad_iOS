@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "78D5E27C7E169F440E910C85A8E798F873140647",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A6950BB1B3A1C3A448EA865A006F743B828063F9" : 9223372036854775807,
+    "78D5E27C7E169F440E910C85A8E798F873140647" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "948228C6-BD38-410F-86D4-2347E1366A92",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A6950BB1B3A1C3A448EA865A006F743B828063F9" : "eZZad_iOS\/eZZad_Common\/",
+    "78D5E27C7E169F440E910C85A8E798F873140647" : "eZZad_iOS\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "eZZad_iOS",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "eZZad_iOS.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Pr0gmaT1k\/eZZad_iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "78D5E27C7E169F440E910C85A8E798F873140647"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Pr0gmaT1k\/eZZad_Common",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A6950BB1B3A1C3A448EA865A006F743B828063F9"
+    }
+  ]
+}
