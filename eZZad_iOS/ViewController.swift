@@ -20,7 +20,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
     
     //Center map
     let center = CLLocationCoordinate2D(latitude: 47.346471, longitude: -1.720943)
-    let viewRegion : MKCoordinateRegion = MKCoordinateRegionMakeWithDistance(center, 2000, 2000);
+    let viewRegion : MKCoordinateRegion = MKCoordinateRegionMakeWithDistance(center, 4000, 4000);
     let adjustedRegion : MKCoordinateRegion = self.mapView.regionThatFits(viewRegion)
     self.mapView.setRegion(adjustedRegion ,animated:true)
     self.mapView.showsUserLocation = true
