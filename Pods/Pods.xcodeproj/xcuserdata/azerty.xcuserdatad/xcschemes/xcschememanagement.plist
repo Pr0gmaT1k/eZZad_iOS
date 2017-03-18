@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>GEOSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-eZZad_iOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -24,6 +29,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>geos.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>sqlite3.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,7 +42,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>35A66E87B381AE9726AADB1DD5D577DF</key>
+		<key>03CE2FB845D850981233945CF9EBFD70</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>47298A4A060E829D42E90FE108B24A2F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>51DC3F0E27E375F9D16C8DC155356DC1</key>
 		<dict>
 			<key>primary</key>
 			<true/>

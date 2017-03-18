@@ -1,17 +1,25 @@
 PODS:
   - FMDB/standalone/FTS (2.6.2):
     - sqlite3/fts
+  - geos (3.5.0)
+  - GEOSwift (0.5.1):
+    - GEOSwift/Core (= 0.5.1)
+  - GEOSwift/Core (0.5.1):
+    - geos (= 3.5.0)
   - sqlite3/common (3.17.0)
   - sqlite3/fts (3.17.0):
     - sqlite3/common
 
 DEPENDENCIES:
   - FMDB/standalone/FTS
+  - GEOSwift
 
 SPEC CHECKSUMS:
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  geos: e96c6ca3f3ce02d20feaa8d90d4af383e11e7198
+  GEOSwift: 7a3e070ee189ea27d3bcb6ba5244bf69d4f953aa
   sqlite3: 3675836c3d675e606507595cf4fd65066b9e11f2
 
-PODFILE CHECKSUM: d80fcabfe4fc08519eaf9b755100b1b121282bcb
+PODFILE CHECKSUM: 92a87665a85fe666397d09681d34753c295aac33
 
 COCOAPODS: 1.2.0

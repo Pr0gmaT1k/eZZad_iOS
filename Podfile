@@ -5,6 +5,7 @@ use_frameworks!
 
 target 'eZZad_iOS' do
   pod 'FMDB/standalone/FTS'
+  pod 'GEOSwift'
 end
 
 target 'eZZad_iOSTests' do
