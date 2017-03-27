@@ -52,12 +52,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
   
   /** Load GeoJSON From local file */
   private func setupGeoJSON() {
-    if let geoJSONURL = Bundle.main.url(forResource: "AirportPerimeter", withExtension: ".geojson"),
-      let geometries = try? Geometry.fromGeoJSON(geoJSONURL),
-      let airportPerimeterPolygon = geometries?[0] as? Polygon,
-      let airportPerimeterOverlay = airportPerimeterPolygon.mapShape() as? MKPolygon {
-      self.mapView.add(airportPerimeterOverlay)
-    }
+    addGeoJSON(bundledFileName: "AirportPerimeter")
   }
   
   /** Initialise Map DB from MBTiles File. */
@@ -66,6 +61,19 @@ class ViewController: UIViewController, MKMapViewDelegate {
       let overlay = MBtilesOverlay(dbPath: dbPath)
       overlay.canReplaceMapContent = true
       mapView.add(overlay, level: .aboveLabels)
+    }
+  }
+  
+  /**
+   * Add MKOverlay to self.mapView from bundled file
+   * :bundledFileName: File name without extension
+   */
+  private func addGeoJSON(bundledFileName: String) {
+    if let geoJSONURL = Bundle.main.url(forResource: bundledFileName, withExtension: ".geojson"),
+      let geometries = try? Geometry.fromGeoJSON(geoJSONURL),
+      let airportPerimeterPolygon = geometries?[0] as? Polygon,
+      let airportPerimeterOverlay = airportPerimeterPolygon.mapShape() as? MKOverlay {
+      self.mapView.add(airportPerimeterOverlay)
     }
   }
 }
