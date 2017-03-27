@@ -15,6 +15,7 @@
 		BAAA38651E77582900CD8A06 /* zad.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = BAAA38611E77582900CD8A06 /* zad.mbtiles */; };
 		BAAA38661E77582900CD8A06 /* zad.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = BAAA38611E77582900CD8A06 /* zad.mbtiles */; };
 		BAAA38671E77582900CD8A06 /* zad.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = BAAA38611E77582900CD8A06 /* zad.mbtiles */; };
+		BAB427E41E7DC1D4005593D1 /* AirportPerimeter.geojson in Resources */ = {isa = PBXBuildFile; fileRef = BAB427E31E7DC1D4005593D1 /* AirportPerimeter.geojson */; };
 		BAE244B01E6CDD5C0014E833 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE244AF1E6CDD5C0014E833 /* AppDelegate.swift */; };
 		BAE244B21E6CDD5C0014E833 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE244B11E6CDD5C0014E833 /* ViewController.swift */; };
 		BAE244B51E6CDD5C0014E833 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAE244B31E6CDD5C0014E833 /* Main.storyboard */; };
@@ -51,6 +52,7 @@
 		B9D8396CCE9FD66C1163B248 /* Pods_eZZad_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eZZad_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAAA38501E77500100CD8A06 /* MBTileOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBTileOverlay.swift; sourceTree = "<group>"; };
 		BAAA38611E77582900CD8A06 /* zad.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = zad.mbtiles; sourceTree = "<group>"; };
+		BAB427E31E7DC1D4005593D1 /* AirportPerimeter.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AirportPerimeter.geojson; sourceTree = "<group>"; };
 		BAE244AC1E6CDD5C0014E833 /* eZZad_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eZZad_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE244AF1E6CDD5C0014E833 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAE244B11E6CDD5C0014E833 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,9 +125,18 @@
 		BAAA385F1E77582900CD8A06 /* eZZad_Common */ = {
 			isa = PBXGroup;
 			children = (
+				BAB427E21E7DC1D4005593D1 /* GeoJson */,
 				BAAA38611E77582900CD8A06 /* zad.mbtiles */,
 			);
 			path = eZZad_Common;
+			sourceTree = "<group>";
+		};
+		BAB427E21E7DC1D4005593D1 /* GeoJson */ = {
+			isa = PBXGroup;
+			children = (
+				BAB427E31E7DC1D4005593D1 /* AirportPerimeter.geojson */,
+			);
+			path = GeoJson;
 			sourceTree = "<group>";
 		};
 		BAE244A31E6CDD5C0014E833 = {
@@ -303,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAAA38651E77582900CD8A06 /* zad.mbtiles in Resources */,
+				BAB427E41E7DC1D4005593D1 /* AirportPerimeter.geojson in Resources */,
 				BAE244BA1E6CDD5C0014E833 /* LaunchScreen.storyboard in Resources */,
 				BAE244B71E6CDD5C0014E833 /* Assets.xcassets in Resources */,
 				BAE244B51E6CDD5C0014E833 /* Main.storyboard in Resources */,
