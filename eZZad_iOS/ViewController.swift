@@ -27,8 +27,15 @@ class ViewController: UIViewController, MKMapViewDelegate {
   }
   
   func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-    guard let tileOverlay = overlay as? MKTileOverlay else { return MKOverlayRenderer() }
-    return MKTileOverlayRenderer(tileOverlay: tileOverlay)
+    switch overlay {
+    case let overlay as MKPolygon:
+      let polygonRenderer = MKPolygonRenderer(polygon: overlay)
+      polygonRenderer.lineWidth = 1
+      polygonRenderer.strokeColor = UIColor.black.withAlphaComponent(0.5)
+      return polygonRenderer
+    case let overlay as MKTileOverlay: return MKTileOverlayRenderer(tileOverlay: overlay)
+    default: return MKOverlayRenderer() // empty renderer.
+    }
   }
   
   //
@@ -48,7 +55,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
     if let geoJSONURL = Bundle.main.url(forResource: "AirportPerimeter", withExtension: ".geojson"),
       let geometries = try? Geometry.fromGeoJSON(geoJSONURL),
       let airportPerimeterPolygon = geometries?[0] as? Polygon,
-      let airportPerimeterOverlay = airportPerimeterPolygon.mapShape() as? MKOverlay {
+      let airportPerimeterOverlay = airportPerimeterPolygon.mapShape() as? MKPolygon {
       self.mapView.add(airportPerimeterOverlay)
     }
   }
