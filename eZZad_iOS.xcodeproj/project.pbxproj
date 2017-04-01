@@ -10,6 +10,9 @@
 		6DA3AA280956786E9635703A /* Pods_eZZad_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4483D5EF2362E483F114CC92 /* Pods_eZZad_iOSTests.framework */; };
 		B8393D13021CADD41AFE066D /* Pods_eZZad_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D8396CCE9FD66C1163B248 /* Pods_eZZad_iOSUITests.framework */; };
 		BA900DE31E8FA0B600346963 /* Plots.geojson in Resources */ = {isa = PBXBuildFile; fileRef = BA900DE21E8FA0B600346963 /* Plots.geojson */; };
+		BA900DE71E8FA66A00346963 /* Footprint.geojson in Resources */ = {isa = PBXBuildFile; fileRef = BA900DE41E8FA66A00346963 /* Footprint.geojson */; };
+		BA900DE81E8FA66A00346963 /* Places.geojson in Resources */ = {isa = PBXBuildFile; fileRef = BA900DE51E8FA66A00346963 /* Places.geojson */; };
+		BA900DE91E8FA66A00346963 /* RoadsideBar.geojson in Resources */ = {isa = PBXBuildFile; fileRef = BA900DE61E8FA66A00346963 /* RoadsideBar.geojson */; };
 		BAAA38511E77500100CD8A06 /* MBTileOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAA38501E77500100CD8A06 /* MBTileOverlay.swift */; };
 		BAAA38521E77500100CD8A06 /* MBTileOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAA38501E77500100CD8A06 /* MBTileOverlay.swift */; };
 		BAAA38531E77500100CD8A06 /* MBTileOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAA38501E77500100CD8A06 /* MBTileOverlay.swift */; };
@@ -52,6 +55,9 @@
 		A2CDA0BC92E7F746C4E94C3F /* Pods-eZZad_iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eZZad_iOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-eZZad_iOSUITests/Pods-eZZad_iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B9D8396CCE9FD66C1163B248 /* Pods_eZZad_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eZZad_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA900DE21E8FA0B600346963 /* Plots.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Plots.geojson; sourceTree = "<group>"; };
+		BA900DE41E8FA66A00346963 /* Footprint.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Footprint.geojson; sourceTree = "<group>"; };
+		BA900DE51E8FA66A00346963 /* Places.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Places.geojson; sourceTree = "<group>"; };
+		BA900DE61E8FA66A00346963 /* RoadsideBar.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RoadsideBar.geojson; sourceTree = "<group>"; };
 		BAAA38501E77500100CD8A06 /* MBTileOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBTileOverlay.swift; sourceTree = "<group>"; };
 		BAAA38611E77582900CD8A06 /* zad.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = zad.mbtiles; sourceTree = "<group>"; };
 		BAB427E31E7DC1D4005593D1 /* AirportPerimeter.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AirportPerimeter.geojson; sourceTree = "<group>"; };
@@ -136,6 +142,9 @@
 		BAB427E21E7DC1D4005593D1 /* GeoJson */ = {
 			isa = PBXGroup;
 			children = (
+				BA900DE41E8FA66A00346963 /* Footprint.geojson */,
+				BA900DE51E8FA66A00346963 /* Places.geojson */,
+				BA900DE61E8FA66A00346963 /* RoadsideBar.geojson */,
 				BA900DE21E8FA0B600346963 /* Plots.geojson */,
 				BAB427E31E7DC1D4005593D1 /* AirportPerimeter.geojson */,
 			);
@@ -316,11 +325,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA900DE71E8FA66A00346963 /* Footprint.geojson in Resources */,
+				BA900DE81E8FA66A00346963 /* Places.geojson in Resources */,
 				BAAA38651E77582900CD8A06 /* zad.mbtiles in Resources */,
 				BAB427E41E7DC1D4005593D1 /* AirportPerimeter.geojson in Resources */,
 				BAE244BA1E6CDD5C0014E833 /* LaunchScreen.storyboard in Resources */,
 				BAE244B71E6CDD5C0014E833 /* Assets.xcassets in Resources */,
 				BA900DE31E8FA0B600346963 /* Plots.geojson in Resources */,
+				BA900DE91E8FA66A00346963 /* RoadsideBar.geojson in Resources */,
 				BAE244B51E6CDD5C0014E833 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
