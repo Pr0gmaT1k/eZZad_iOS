@@ -53,6 +53,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
   /** Load GeoJSON From local file */
   private func setupGeoJSON() {
     addGeoJSON(bundledFileName: "AirportPerimeter")
+    addGeoJSON(bundledFileName: "Plots")
   }
   
   /** Initialise Map DB from MBTiles File. */
