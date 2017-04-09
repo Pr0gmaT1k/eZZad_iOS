@@ -33,8 +33,6 @@ class ViewController: UIViewController, MKMapViewDelegate {
       polygonRenderer.lineWidth = 1
       polygonRenderer.strokeColor = UIColor.black.withAlphaComponent(0.5)
       return polygonRenderer
-    case let overlay as MKShapesCollection:
-      return MKOverlayRenderer()
     case let overlay as MKTileOverlay: return MKTileOverlayRenderer(tileOverlay: overlay)
     default: return MKOverlayRenderer() // empty renderer.
     }
@@ -91,8 +89,10 @@ class ViewController: UIViewController, MKMapViewDelegate {
         guard let overlay = geometry.mapShape() as? MKOverlay else { break }
         self.mapView.add(overlay)
       case let geometry as MultiPolygon<Polygon>:
-        guard let overlay = geometry.mapShape() as? MKOverlay else { break }
-        self.mapView.add(overlay)
+        for subGeometry in geometry.geometries {
+          guard let overlay = subGeometry.mapShape() as? MKOverlay else { break }
+          self.mapView.add(overlay)
+        }
       case let geometry as Waypoint: self.mapView.addAnnotation(geometry.mapShape())
       default: break
       }
