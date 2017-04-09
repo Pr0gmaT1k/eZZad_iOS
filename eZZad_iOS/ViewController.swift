@@ -59,7 +59,11 @@ class ViewController: UIViewController, MKMapViewDelegate {
   /** Load GeoJSON From local file */
   private func setupGeoJSON() {
     addGeoJSON(bundledFileName: "AirportPerimeter")
-    addGeoJSON(bundledFileName: "Plots")
+    addGeoJSON(bundledFileName: "Plots1")
+    addGeoJSON(bundledFileName: "Plots2")
+    addGeoJSON(bundledFileName: "Plots3")
+    addGeoJSON(bundledFileName: "Plots4")
+    addGeoJSON(bundledFileName: "Plots5")
     addGeoJSON(bundledFileName: "Places")
     addGeoJSON(bundledFileName: "FootPrint")
     addGeoJSON(bundledFileName: "RoadsideBar")
