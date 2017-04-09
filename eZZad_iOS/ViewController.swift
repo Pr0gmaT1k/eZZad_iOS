@@ -33,9 +33,17 @@ class ViewController: UIViewController, MKMapViewDelegate {
       polygonRenderer.lineWidth = 1
       polygonRenderer.strokeColor = UIColor.black.withAlphaComponent(0.5)
       return polygonRenderer
+    case let overlay as MKShapesCollection:
+      return MKOverlayRenderer()
     case let overlay as MKTileOverlay: return MKTileOverlayRenderer(tileOverlay: overlay)
     default: return MKOverlayRenderer() // empty renderer.
     }
+  }
+  
+  func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+    let annotationView = self.mapView.view(for: annotation)
+    annotationView?.tintColor = UIColor.red
+    return annotationView
   }
   
   //
@@ -54,6 +62,9 @@ class ViewController: UIViewController, MKMapViewDelegate {
   private func setupGeoJSON() {
     addGeoJSON(bundledFileName: "AirportPerimeter")
     addGeoJSON(bundledFileName: "Plots")
+    addGeoJSON(bundledFileName: "Places")
+    addGeoJSON(bundledFileName: "FootPrint")
+    addGeoJSON(bundledFileName: "RoadsideBar")
   }
   
   /** Initialise Map DB from MBTiles File. */
@@ -70,11 +81,21 @@ class ViewController: UIViewController, MKMapViewDelegate {
    * :bundledFileName: File name without extension
    */
   private func addGeoJSON(bundledFileName: String) {
-    if let geoJSONURL = Bundle.main.url(forResource: bundledFileName, withExtension: ".geojson"),
-      let geometries = try? Geometry.fromGeoJSON(geoJSONURL),
-      let airportPerimeterPolygon = geometries?[0] as? Polygon,
-      let airportPerimeterOverlay = airportPerimeterPolygon.mapShape() as? MKOverlay {
-      self.mapView.add(airportPerimeterOverlay)
+    guard let geoJSONURL = Bundle.main.url(forResource: bundledFileName, withExtension: ".geojson"),
+      let geometriesO = try? Geometry.fromGeoJSON(geoJSONURL),
+      let geometries = geometriesO else { return }
+    print(geometries.count as Any)
+    for geometry in geometries {
+      switch geometry {
+      case let geometry as Polygon:
+        guard let overlay = geometry.mapShape() as? MKOverlay else { break }
+        self.mapView.add(overlay)
+      case let geometry as MultiPolygon<Polygon>:
+        guard let overlay = geometry.mapShape() as? MKOverlay else { break }
+        self.mapView.add(overlay)
+      case let geometry as Waypoint: self.mapView.addAnnotation(geometry.mapShape())
+      default: break
+      }
     }
   }
 }
