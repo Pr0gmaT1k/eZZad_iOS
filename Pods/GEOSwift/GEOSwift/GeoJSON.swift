@@ -19,7 +19,7 @@ public extension Geometry {
     - parameter URL: the URL pointing to the GeoJSON file.
     
     :returns: An optional `Array` of `Geometry` instances.
-*/
+   */
     public class func fromGeoJSON(_ URL: Foundation.URL) throws -> Array<Geometry>? {
         
         if let JSONData = try? Data(contentsOf: URL) {
@@ -27,7 +27,7 @@ public extension Geometry {
             do {
                 // read JSON file
                 let parsedObject = try JSONSerialization.jsonObject(with: JSONData,
-                    options: JSONSerialization.ReadingOptions.allowFragments) as? NSDictionary
+                    options: JSONSerialization.ReadingOptions.mutableContainers) as? NSDictionary
                 
                 // is the root a Dictionary with a "type" key of value "FeatureCollection"?
                 if let rootObject = parsedObject as? Dictionary<String, AnyObject> {
@@ -96,8 +96,6 @@ private func ParseGEOJSONFeatureCollection(_ features: NSArray) -> [Geometry]? {
             let feat2 = feat1 as? Dictionary<String,AnyObject>,
             let geom = ParseGEOJSONFeature(feat2) {
                 geometries.append(geom)
-        } else {
-            return nil
         }
     }
     return geometries

@@ -26,11 +26,23 @@
 		BAE244BA1E6CDD5C0014E833 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAE244B81E6CDD5C0014E833 /* LaunchScreen.storyboard */; };
 		BAE244C51E6CDD5C0014E833 /* eZZad_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE244C41E6CDD5C0014E833 /* eZZad_iOSTests.swift */; };
 		BAE244D01E6CDD5C0014E833 /* eZZad_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE244CF1E6CDD5C0014E833 /* eZZad_iOSUITests.swift */; };
-		BAED921F1E9AE330008DC14A /* Plots1.geojson in Resources */ = {isa = PBXBuildFile; fileRef = BAED921A1E9AE330008DC14A /* Plots1.geojson */; };
-		BAED92201E9AE330008DC14A /* Plots2.geojson in Resources */ = {isa = PBXBuildFile; fileRef = BAED921B1E9AE330008DC14A /* Plots2.geojson */; };
-		BAED92211E9AE330008DC14A /* Plots3.geojson in Resources */ = {isa = PBXBuildFile; fileRef = BAED921C1E9AE330008DC14A /* Plots3.geojson */; };
-		BAED92221E9AE330008DC14A /* Plots4.geojson in Resources */ = {isa = PBXBuildFile; fileRef = BAED921D1E9AE330008DC14A /* Plots4.geojson */; };
-		BAED92231E9AE330008DC14A /* Plots5.geojson in Resources */ = {isa = PBXBuildFile; fileRef = BAED921E1E9AE330008DC14A /* Plots5.geojson */; };
+		BAED92411E9AEC79008DC14A /* Plots.geojson in Resources */ = {isa = PBXBuildFile; fileRef = BAED92311E9AEC79008DC14A /* Plots.geojson */; };
+		BAED92421E9AEC79008DC14A /* Plots1.geojson in Resources */ = {isa = PBXBuildFile; fileRef = BAED92321E9AEC79008DC14A /* Plots1.geojson */; };
+		BAED92431E9AEC79008DC14A /* Plots10.geojson in Resources */ = {isa = PBXBuildFile; fileRef = BAED92331E9AEC79008DC14A /* Plots10.geojson */; };
+		BAED92441E9AEC79008DC14A /* Plots11.geojson in Resources */ = {isa = PBXBuildFile; fileRef = BAED92341E9AEC79008DC14A /* Plots11.geojson */; };
+		BAED92451E9AEC79008DC14A /* Plots12.geojson in Resources */ = {isa = PBXBuildFile; fileRef = BAED92351E9AEC79008DC14A /* Plots12.geojson */; };
+		BAED92461E9AEC79008DC14A /* Plots13.geojson in Resources */ = {isa = PBXBuildFile; fileRef = BAED92361E9AEC79008DC14A /* Plots13.geojson */; };
+		BAED92471E9AEC79008DC14A /* Plots14.geojson in Resources */ = {isa = PBXBuildFile; fileRef = BAED92371E9AEC79008DC14A /* Plots14.geojson */; };
+		BAED92481E9AEC79008DC14A /* Plots15.geojson in Resources */ = {isa = PBXBuildFile; fileRef = BAED92381E9AEC79008DC14A /* Plots15.geojson */; };
+		BAED92491E9AEC79008DC14A /* Plots2.geojson in Resources */ = {isa = PBXBuildFile; fileRef = BAED92391E9AEC79008DC14A /* Plots2.geojson */; };
+		BAED924A1E9AEC79008DC14A /* Plots3.geojson in Resources */ = {isa = PBXBuildFile; fileRef = BAED923A1E9AEC79008DC14A /* Plots3.geojson */; };
+		BAED924B1E9AEC79008DC14A /* Plots4.geojson in Resources */ = {isa = PBXBuildFile; fileRef = BAED923B1E9AEC79008DC14A /* Plots4.geojson */; };
+		BAED924C1E9AEC79008DC14A /* Plots5.geojson in Resources */ = {isa = PBXBuildFile; fileRef = BAED923C1E9AEC79008DC14A /* Plots5.geojson */; };
+		BAED924D1E9AEC79008DC14A /* Plots6.geojson in Resources */ = {isa = PBXBuildFile; fileRef = BAED923D1E9AEC79008DC14A /* Plots6.geojson */; };
+		BAED924E1E9AEC79008DC14A /* Plots7.geojson in Resources */ = {isa = PBXBuildFile; fileRef = BAED923E1E9AEC79008DC14A /* Plots7.geojson */; };
+		BAED924F1E9AEC79008DC14A /* Plots8.geojson in Resources */ = {isa = PBXBuildFile; fileRef = BAED923F1E9AEC79008DC14A /* Plots8.geojson */; };
+		BAED92501E9AEC79008DC14A /* Plots9.geojson in Resources */ = {isa = PBXBuildFile; fileRef = BAED92401E9AEC79008DC14A /* Plots9.geojson */; };
+		BAED92521E9AEED6008DC14A /* Plots16.geojson in Resources */ = {isa = PBXBuildFile; fileRef = BAED92511E9AEED6008DC14A /* Plots16.geojson */; };
 		D38E1A5309EB07AD6D6D096D /* Pods_eZZad_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A3D886FA72DA63649BAD6D /* Pods_eZZad_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,11 +89,23 @@
 		BAE244CB1E6CDD5C0014E833 /* eZZad_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eZZad_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE244CF1E6CDD5C0014E833 /* eZZad_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eZZad_iOSUITests.swift; sourceTree = "<group>"; };
 		BAE244D11E6CDD5C0014E833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BAED921A1E9AE330008DC14A /* Plots1.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Plots1.geojson; sourceTree = "<group>"; };
-		BAED921B1E9AE330008DC14A /* Plots2.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Plots2.geojson; sourceTree = "<group>"; };
-		BAED921C1E9AE330008DC14A /* Plots3.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Plots3.geojson; sourceTree = "<group>"; };
-		BAED921D1E9AE330008DC14A /* Plots4.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Plots4.geojson; sourceTree = "<group>"; };
-		BAED921E1E9AE330008DC14A /* Plots5.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Plots5.geojson; sourceTree = "<group>"; };
+		BAED92311E9AEC79008DC14A /* Plots.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Plots.geojson; sourceTree = "<group>"; };
+		BAED92321E9AEC79008DC14A /* Plots1.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Plots1.geojson; sourceTree = "<group>"; };
+		BAED92331E9AEC79008DC14A /* Plots10.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Plots10.geojson; sourceTree = "<group>"; };
+		BAED92341E9AEC79008DC14A /* Plots11.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Plots11.geojson; sourceTree = "<group>"; };
+		BAED92351E9AEC79008DC14A /* Plots12.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Plots12.geojson; sourceTree = "<group>"; };
+		BAED92361E9AEC79008DC14A /* Plots13.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Plots13.geojson; sourceTree = "<group>"; };
+		BAED92371E9AEC79008DC14A /* Plots14.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Plots14.geojson; sourceTree = "<group>"; };
+		BAED92381E9AEC79008DC14A /* Plots15.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Plots15.geojson; sourceTree = "<group>"; };
+		BAED92391E9AEC79008DC14A /* Plots2.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Plots2.geojson; sourceTree = "<group>"; };
+		BAED923A1E9AEC79008DC14A /* Plots3.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Plots3.geojson; sourceTree = "<group>"; };
+		BAED923B1E9AEC79008DC14A /* Plots4.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Plots4.geojson; sourceTree = "<group>"; };
+		BAED923C1E9AEC79008DC14A /* Plots5.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Plots5.geojson; sourceTree = "<group>"; };
+		BAED923D1E9AEC79008DC14A /* Plots6.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Plots6.geojson; sourceTree = "<group>"; };
+		BAED923E1E9AEC79008DC14A /* Plots7.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Plots7.geojson; sourceTree = "<group>"; };
+		BAED923F1E9AEC79008DC14A /* Plots8.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Plots8.geojson; sourceTree = "<group>"; };
+		BAED92401E9AEC79008DC14A /* Plots9.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Plots9.geojson; sourceTree = "<group>"; };
+		BAED92511E9AEED6008DC14A /* Plots16.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Plots16.geojson; sourceTree = "<group>"; };
 		C018A1C0AF85097E9FC185B4 /* Pods-eZZad_iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eZZad_iOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eZZad_iOSUITests/Pods-eZZad_iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C0A3D886FA72DA63649BAD6D /* Pods_eZZad_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eZZad_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB1B564FA075FD84ED00C4ED /* Pods-eZZad_iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eZZad_iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eZZad_iOSTests/Pods-eZZad_iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -150,7 +174,7 @@
 		BAB427E21E7DC1D4005593D1 /* GeoJson */ = {
 			isa = PBXGroup;
 			children = (
-				BAED92191E9AE330008DC14A /* Plots */,
+				BAED92301E9AEC79008DC14A /* Plots */,
 				BA900DE41E8FA66A00346963 /* Footprint.geojson */,
 				BA900DE51E8FA66A00346963 /* Places.geojson */,
 				BA900DE61E8FA66A00346963 /* RoadsideBar.geojson */,
@@ -214,14 +238,26 @@
 			path = eZZad_iOSUITests;
 			sourceTree = "<group>";
 		};
-		BAED92191E9AE330008DC14A /* Plots */ = {
+		BAED92301E9AEC79008DC14A /* Plots */ = {
 			isa = PBXGroup;
 			children = (
-				BAED921A1E9AE330008DC14A /* Plots1.geojson */,
-				BAED921B1E9AE330008DC14A /* Plots2.geojson */,
-				BAED921C1E9AE330008DC14A /* Plots3.geojson */,
-				BAED921D1E9AE330008DC14A /* Plots4.geojson */,
-				BAED921E1E9AE330008DC14A /* Plots5.geojson */,
+				BAED92511E9AEED6008DC14A /* Plots16.geojson */,
+				BAED92311E9AEC79008DC14A /* Plots.geojson */,
+				BAED92321E9AEC79008DC14A /* Plots1.geojson */,
+				BAED92331E9AEC79008DC14A /* Plots10.geojson */,
+				BAED92341E9AEC79008DC14A /* Plots11.geojson */,
+				BAED92351E9AEC79008DC14A /* Plots12.geojson */,
+				BAED92361E9AEC79008DC14A /* Plots13.geojson */,
+				BAED92371E9AEC79008DC14A /* Plots14.geojson */,
+				BAED92381E9AEC79008DC14A /* Plots15.geojson */,
+				BAED92391E9AEC79008DC14A /* Plots2.geojson */,
+				BAED923A1E9AEC79008DC14A /* Plots3.geojson */,
+				BAED923B1E9AEC79008DC14A /* Plots4.geojson */,
+				BAED923C1E9AEC79008DC14A /* Plots5.geojson */,
+				BAED923D1E9AEC79008DC14A /* Plots6.geojson */,
+				BAED923E1E9AEC79008DC14A /* Plots7.geojson */,
+				BAED923F1E9AEC79008DC14A /* Plots8.geojson */,
+				BAED92401E9AEC79008DC14A /* Plots9.geojson */,
 			);
 			path = Plots;
 			sourceTree = "<group>";
@@ -345,19 +381,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAED92211E9AE330008DC14A /* Plots3.geojson in Resources */,
+				BAED924E1E9AEC79008DC14A /* Plots7.geojson in Resources */,
+				BAED924B1E9AEC79008DC14A /* Plots4.geojson in Resources */,
+				BAED92461E9AEC79008DC14A /* Plots13.geojson in Resources */,
+				BAED924D1E9AEC79008DC14A /* Plots6.geojson in Resources */,
+				BAED92501E9AEC79008DC14A /* Plots9.geojson in Resources */,
+				BAED92421E9AEC79008DC14A /* Plots1.geojson in Resources */,
 				BA900DE71E8FA66A00346963 /* Footprint.geojson in Resources */,
+				BAED924C1E9AEC79008DC14A /* Plots5.geojson in Resources */,
 				BA900DE81E8FA66A00346963 /* Places.geojson in Resources */,
+				BAED924F1E9AEC79008DC14A /* Plots8.geojson in Resources */,
+				BAED92471E9AEC79008DC14A /* Plots14.geojson in Resources */,
 				BAAA38651E77582900CD8A06 /* zad.mbtiles in Resources */,
 				BAB427E41E7DC1D4005593D1 /* AirportPerimeter.geojson in Resources */,
-				BAED92231E9AE330008DC14A /* Plots5.geojson in Resources */,
+				BAED92491E9AEC79008DC14A /* Plots2.geojson in Resources */,
 				BAE244BA1E6CDD5C0014E833 /* LaunchScreen.storyboard in Resources */,
 				BAE244B71E6CDD5C0014E833 /* Assets.xcassets in Resources */,
-				BAED92221E9AE330008DC14A /* Plots4.geojson in Resources */,
+				BAED924A1E9AEC79008DC14A /* Plots3.geojson in Resources */,
+				BAED92451E9AEC79008DC14A /* Plots12.geojson in Resources */,
+				BAED92521E9AEED6008DC14A /* Plots16.geojson in Resources */,
+				BAED92481E9AEC79008DC14A /* Plots15.geojson in Resources */,
+				BAED92431E9AEC79008DC14A /* Plots10.geojson in Resources */,
 				BA900DE91E8FA66A00346963 /* RoadsideBar.geojson in Resources */,
+				BAED92411E9AEC79008DC14A /* Plots.geojson in Resources */,
+				BAED92441E9AEC79008DC14A /* Plots11.geojson in Resources */,
 				BAE244B51E6CDD5C0014E833 /* Main.storyboard in Resources */,
-				BAED921F1E9AE330008DC14A /* Plots1.geojson in Resources */,
-				BAED92201E9AE330008DC14A /* Plots2.geojson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
