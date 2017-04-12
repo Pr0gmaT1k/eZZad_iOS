@@ -9,18 +9,18 @@
 import UIKit
 import MapKit
 import GEOSwift
-import CCHMapClusterController
+import FBAnnotationClustering
 
 //bbox -1.815,47.3169,-1.6306,47.3932
 
 class ViewController: UIViewController {
   //
   // Mark: IBoutlet
-  @IBOutlet private weak var mapView: MKMapView!
+  @IBOutlet fileprivate weak var mapView: MKMapView!
   
   //
   // Mark:- Properties
-  private var clusterController: CCHMapClusterController?
+  fileprivate let clusteringManager = FBClusteringManager()
   
   //
   // Mark: public func
@@ -31,12 +31,16 @@ class ViewController: UIViewController {
     setupGeoJSON()
   }
   
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    self.refreshAnnotation()
+  }
+  
   //
   // Mark:- private func
   /** Center map */
   private func setupMap() {
     self.mapView.delegate = self
-    self.clusterController = CCHMapClusterController(mapView: self.mapView)
     let center = CLLocationCoordinate2D(latitude: 47.346471, longitude: -1.720943)
     let viewRegion : MKCoordinateRegion = MKCoordinateRegionMakeWithDistance(center, 4000, 4000);
     let adjustedRegion : MKCoordinateRegion = self.mapView.regionThatFits(viewRegion)
@@ -79,8 +83,21 @@ class ViewController: UIViewController {
           guard let overlay = subGeometry.mapShape() as? MKOverlay else { break }
           self.mapView.add(overlay)
         }
-      case let geometry as Waypoint: self.clusterController?.addAnnotations([geometry.mapShape()], withCompletionHandler: nil)
+      case let geometry as Waypoint: self.clusteringManager.addAnnotations([geometry.mapShape()])
       default: break
+      }
+    }
+  }
+  
+  /** Refresh self.mapView Annotation */
+  fileprivate func refreshAnnotation() {
+    DispatchQueue.global(qos: .userInitiated).async {
+      let scale = Double(self.mapView.bounds.size.width) / self.mapView.visibleMapRect.size.width
+      let annotationArray = self.clusteringManager.clusteredAnnotations(within: self.mapView.visibleMapRect,
+                                                                        withZoomScale:scale)
+      DispatchQueue.main.async {
+        self.clusteringManager.displayAnnotations(annotationArray,
+                                                  on: self.mapView)
       }
     }
   }
@@ -100,9 +117,17 @@ extension ViewController: MKMapViewDelegate {
     }
   }
   
+  func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
+    self.refreshAnnotation()
+  }
+  
   func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-    let annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: nil)
-    annotationView.image = UIImage(named: "map_pin")
-    return annotationView
+    switch annotation {
+    case is FBAnnotationCluster: return MKPinAnnotationView()
+    default:
+      let annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: nil)
+      annotationView.image = UIImage(named: "map_pin")
+      return annotationView
+    }
   }
 }

@@ -1,5 +1,5 @@
 PODS:
-  - CCHMapClusterController (1.7.0)
+  - FBAnnotationClustering (0.2.2)
   - FMDB/standalone/FTS (2.6.2):
     - sqlite3/fts
   - geos (3.5.0)
@@ -12,17 +12,17 @@ PODS:
     - sqlite3/common
 
 DEPENDENCIES:
-  - CCHMapClusterController
+  - FBAnnotationClustering
   - FMDB/standalone/FTS
   - GEOSwift
 
 SPEC CHECKSUMS:
-  CCHMapClusterController: d8cd12cd5682ec6cd76d911ac7198f981b6cc1b8
+  FBAnnotationClustering: 0fb150b264030ca72f7c182c94473dd769e9c43a
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   geos: e96c6ca3f3ce02d20feaa8d90d4af383e11e7198
   GEOSwift: 7a3e070ee189ea27d3bcb6ba5244bf69d4f953aa
   sqlite3: 3675836c3d675e606507595cf4fd65066b9e11f2
 
-PODFILE CHECKSUM: 8d19100a40340f63c4240fd0588ab95ff7eb0e31
+PODFILE CHECKSUM: 583997b924a5e2a607971c9227525af89d8cc49b
 
 COCOAPODS: 1.2.0

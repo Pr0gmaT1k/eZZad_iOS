@@ -6,7 +6,7 @@ use_frameworks!
 target 'eZZad_iOS' do
   pod 'FMDB/standalone/FTS'
   pod 'GEOSwift'
-  pod 'CCHMapClusterController'
+  pod 'FBAnnotationClustering'
 end
 
 target 'eZZad_iOSTests' do

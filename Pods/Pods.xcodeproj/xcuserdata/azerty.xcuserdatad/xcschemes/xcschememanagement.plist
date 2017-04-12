@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>CCHMapClusterController.xcscheme</key>
+		<key>FBAnnotationClustering.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -52,11 +52,6 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>25B6537D9D9A6DC673DE6AC1B5916A65</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>51DC3F0E27E375F9D16C8DC155356DC1</key>
 		<dict>
 			<key>primary</key>
@@ -82,7 +77,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DC6D72C4F604D7B6D1A2FC7F1CEDDC08</key>
+		<key>FA76DBED36CDAADD20692BE95C6C6DF2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FB18E157DA96BEF67BB9633A17D28CEA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
