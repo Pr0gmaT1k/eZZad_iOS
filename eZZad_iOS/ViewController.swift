@@ -9,14 +9,18 @@
 import UIKit
 import MapKit
 import GEOSwift
-import FBAnnotationClusteringSwift
+import CCHMapClusterController
 
 //bbox -1.815,47.3169,-1.6306,47.3932
 
-class ViewController: UIViewController, MKMapViewDelegate {
+class ViewController: UIViewController {
   //
   // Mark: IBoutlet
   @IBOutlet private weak var mapView: MKMapView!
+  
+  //
+  // Mark:- Properties
+  private var clusterController: CCHMapClusterController?
   
   //
   // Mark: public func
@@ -27,29 +31,12 @@ class ViewController: UIViewController, MKMapViewDelegate {
     setupGeoJSON()
   }
   
-  func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-    switch overlay {
-    case let overlay as MKPolygon:
-      let polygonRenderer = MKPolygonRenderer(polygon: overlay)
-      polygonRenderer.lineWidth = 1
-      polygonRenderer.strokeColor = UIColor.black.withAlphaComponent(0.5)
-      return polygonRenderer
-    case let overlay as MKTileOverlay: return MKTileOverlayRenderer(tileOverlay: overlay)
-    default: return MKOverlayRenderer() // empty renderer.
-    }
-  }
-  
-  func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-    let annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: nil)
-    annotationView.image = UIImage(named: "map_pin")
-    return annotationView
-  }
-  
   //
   // Mark:- private func
   /** Center map */
   private func setupMap() {
     self.mapView.delegate = self
+    self.clusterController = CCHMapClusterController(mapView: self.mapView)
     let center = CLLocationCoordinate2D(latitude: 47.346471, longitude: -1.720943)
     let viewRegion : MKCoordinateRegion = MKCoordinateRegionMakeWithDistance(center, 4000, 4000);
     let adjustedRegion : MKCoordinateRegion = self.mapView.regionThatFits(viewRegion)
@@ -92,10 +79,30 @@ class ViewController: UIViewController, MKMapViewDelegate {
           guard let overlay = subGeometry.mapShape() as? MKOverlay else { break }
           self.mapView.add(overlay)
         }
-      case let geometry as Waypoint: self.mapView.addAnnotation(geometry.mapShape())
+      case let geometry as Waypoint: self.clusterController?.addAnnotations([geometry.mapShape()], withCompletionHandler: nil)
       default: break
       }
     }
   }
 }
 
+// Mark:- MKMapViewDelegate
+extension ViewController: MKMapViewDelegate {
+  func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+    switch overlay {
+    case let overlay as MKPolygon:
+      let polygonRenderer = MKPolygonRenderer(polygon: overlay)
+      polygonRenderer.lineWidth = 1
+      polygonRenderer.strokeColor = UIColor.black.withAlphaComponent(0.5)
+      return polygonRenderer
+    case let overlay as MKTileOverlay: return MKTileOverlayRenderer(tileOverlay: overlay)
+    default: return MKOverlayRenderer() // empty renderer.
+    }
+  }
+  
+  func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+    let annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: nil)
+    annotationView.image = UIImage(named: "map_pin")
+    return annotationView
+  }
+}
