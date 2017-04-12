@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		6DA3AA280956786E9635703A /* Pods_eZZad_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4483D5EF2362E483F114CC92 /* Pods_eZZad_iOSTests.framework */; };
 		B8393D13021CADD41AFE066D /* Pods_eZZad_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D8396CCE9FD66C1163B248 /* Pods_eZZad_iOSUITests.framework */; };
+		BA38B88C1E9EDF9100C78BBF /* ClusterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA38B88A1E9EDF9100C78BBF /* ClusterView.swift */; };
+		BA38B88D1E9EDF9100C78BBF /* ClusterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA38B88B1E9EDF9100C78BBF /* ClusterView.xib */; };
+		BA38B8941E9EE2D000C78BBF /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA38B8921E9EE2D000C78BBF /* AnnotationView.swift */; };
+		BA38B8951E9EE2D000C78BBF /* AnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA38B8931E9EE2D000C78BBF /* AnnotationView.xib */; };
 		BA900DE71E8FA66A00346963 /* Footprint.geojson in Resources */ = {isa = PBXBuildFile; fileRef = BA900DE41E8FA66A00346963 /* Footprint.geojson */; };
 		BA900DE81E8FA66A00346963 /* Places.geojson in Resources */ = {isa = PBXBuildFile; fileRef = BA900DE51E8FA66A00346963 /* Places.geojson */; };
 		BA900DE91E8FA66A00346963 /* RoadsideBar.geojson in Resources */ = {isa = PBXBuildFile; fileRef = BA900DE61E8FA66A00346963 /* RoadsideBar.geojson */; };
@@ -54,6 +58,10 @@
 		863317413DD7A4759201F2D6 /* Pods-eZZad_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eZZad_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eZZad_iOS/Pods-eZZad_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		A2CDA0BC92E7F746C4E94C3F /* Pods-eZZad_iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eZZad_iOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-eZZad_iOSUITests/Pods-eZZad_iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B9D8396CCE9FD66C1163B248 /* Pods_eZZad_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eZZad_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA38B88A1E9EDF9100C78BBF /* ClusterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClusterView.swift; sourceTree = "<group>"; };
+		BA38B88B1E9EDF9100C78BBF /* ClusterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClusterView.xib; sourceTree = "<group>"; };
+		BA38B8921E9EE2D000C78BBF /* AnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
+		BA38B8931E9EE2D000C78BBF /* AnnotationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnnotationView.xib; sourceTree = "<group>"; };
 		BA900DE41E8FA66A00346963 /* Footprint.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Footprint.geojson; sourceTree = "<group>"; };
 		BA900DE51E8FA66A00346963 /* Places.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Places.geojson; sourceTree = "<group>"; };
 		BA900DE61E8FA66A00346963 /* RoadsideBar.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RoadsideBar.geojson; sourceTree = "<group>"; };
@@ -130,6 +138,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		BA38B8891E9EDF4F00C78BBF /* AnnotationsView */ = {
+			isa = PBXGroup;
+			children = (
+				BA38B88A1E9EDF9100C78BBF /* ClusterView.swift */,
+				BA38B88B1E9EDF9100C78BBF /* ClusterView.xib */,
+				BA38B8921E9EE2D000C78BBF /* AnnotationView.swift */,
+				BA38B8931E9EE2D000C78BBF /* AnnotationView.xib */,
+			);
+			path = AnnotationsView;
+			sourceTree = "<group>";
+		};
 		BAAA385F1E77582900CD8A06 /* eZZad_Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +196,7 @@
 		BAE244AE1E6CDD5C0014E833 /* eZZad_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				BA38B8891E9EDF4F00C78BBF /* AnnotationsView */,
 				BAE244AF1E6CDD5C0014E833 /* AppDelegate.swift */,
 				BAE244B11E6CDD5C0014E833 /* ViewController.swift */,
 				BAE244B31E6CDD5C0014E833 /* Main.storyboard */,
@@ -330,9 +350,11 @@
 				BAAA38651E77582900CD8A06 /* zad.mbtiles in Resources */,
 				BAB427E41E7DC1D4005593D1 /* AirportPerimeter.geojson in Resources */,
 				BAE244BA1E6CDD5C0014E833 /* LaunchScreen.storyboard in Resources */,
+				BA38B88D1E9EDF9100C78BBF /* ClusterView.xib in Resources */,
 				BAE244B71E6CDD5C0014E833 /* Assets.xcassets in Resources */,
 				BA900DE91E8FA66A00346963 /* RoadsideBar.geojson in Resources */,
 				BAED92541E9BA315008DC14A /* Plots.geojson in Resources */,
+				BA38B8951E9EE2D000C78BBF /* AnnotationView.xib in Resources */,
 				BAE244B51E6CDD5C0014E833 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,6 +521,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAE244B21E6CDD5C0014E833 /* ViewController.swift in Sources */,
+				BA38B88C1E9EDF9100C78BBF /* ClusterView.swift in Sources */,
+				BA38B8941E9EE2D000C78BBF /* AnnotationView.swift in Sources */,
 				BAE244B01E6CDD5C0014E833 /* AppDelegate.swift in Sources */,
 				BAAA38511E77500100CD8A06 /* MBTileOverlay.swift in Sources */,
 			);

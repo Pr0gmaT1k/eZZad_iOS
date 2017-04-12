@@ -123,10 +123,10 @@ extension ViewController: MKMapViewDelegate {
   
   func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
     switch annotation {
-    case is FBAnnotationCluster: return MKPinAnnotationView()
+    case is FBAnnotationCluster: return ClusterView.loadFromNib()
     default:
-      let annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: nil)
-      annotationView.image = UIImage(named: "map_pin")
+      let annotationView = AnnotationView.loadFromNib()
+      annotationView.annotation = annotation
       return annotationView
     }
   }
