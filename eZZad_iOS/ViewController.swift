@@ -39,8 +39,8 @@ class ViewController: UIViewController, MKMapViewDelegate {
   }
   
   func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-    let annotationView = self.mapView.view(for: annotation)
-    annotationView?.tintColor = UIColor.red
+    let annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: nil)
+    annotationView.image = UIImage(named: "map_pin")
     return annotationView
   }
   
@@ -59,11 +59,9 @@ class ViewController: UIViewController, MKMapViewDelegate {
   /** Load GeoJSON From local file */
   private func setupGeoJSON() {
     addGeoJSON(bundledFileName: "AirportPerimeter")
-    
-    addGeoJSON(bundledFileName: "Plots")
-    addGeoJSON(bundledFileName: "Places")
-    addGeoJSON(bundledFileName: "FootPrint")
-    addGeoJSON(bundledFileName: "RoadsideBar")
+    addGeoJSON(bundledFileName:            "Plots")
+    addGeoJSON(bundledFileName:           "Places")
+    addGeoJSON(bundledFileName:      "RoadsideBar")
   }
   
   /** Initialise Map DB from MBTiles File. */
@@ -83,7 +81,6 @@ class ViewController: UIViewController, MKMapViewDelegate {
     guard let geoJSONURL = Bundle.main.url(forResource: bundledFileName, withExtension: ".geojson"),
       let geometriesO = try? Geometry.fromGeoJSON(geoJSONURL),
       let geometries = geometriesO else { return }
-    print(geometries.count as Any)
     for geometry in geometries {
       switch geometry {
       case let geometry as Polygon:
