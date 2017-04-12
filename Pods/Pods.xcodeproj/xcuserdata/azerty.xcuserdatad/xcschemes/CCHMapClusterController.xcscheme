@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '25B6537D9D9A6DC673DE6AC1B5916A65'
-               BlueprintName = 'Pods-eZZad_iOS'
+               BlueprintIdentifier = 'DC6D72C4F604D7B6D1A2FC7F1CEDDC08'
+               BlueprintName = 'CCHMapClusterController'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods-eZZad_iOS.framework'>
+               BuildableName = 'CCHMapClusterController.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

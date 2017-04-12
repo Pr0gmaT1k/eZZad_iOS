@@ -9,6 +9,7 @@
 import UIKit
 import MapKit
 import GEOSwift
+import FBAnnotationClusteringSwift
 
 //bbox -1.815,47.3169,-1.6306,47.3932
 
