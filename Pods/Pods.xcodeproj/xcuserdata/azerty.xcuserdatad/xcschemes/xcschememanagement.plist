@@ -34,6 +34,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Reusable.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>geos.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -53,6 +58,11 @@
 			<true/>
 		</dict>
 		<key>51DC3F0E27E375F9D16C8DC155356DC1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5F2157F65C65B418ACC2186554C6CCC7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -77,12 +87,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FA76DBED36CDAADD20692BE95C6C6DF2</key>
+		<key>F451AD57B76C51DDA843F8F7BD20B9AC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FB18E157DA96BEF67BB9633A17D28CEA</key>
+		<key>FA76DBED36CDAADD20692BE95C6C6DF2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

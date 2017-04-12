@@ -7,6 +7,7 @@ target 'eZZad_iOS' do
   pod 'FMDB/standalone/FTS'
   pod 'GEOSwift'
   pod 'FBAnnotationClustering'
+  pod 'Reusable'
 end
 
 target 'eZZad_iOSTests' do

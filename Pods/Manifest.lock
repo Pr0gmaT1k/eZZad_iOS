@@ -7,6 +7,11 @@ PODS:
     - GEOSwift/Core (= 0.5.1)
   - GEOSwift/Core (0.5.1):
     - geos (= 3.5.0)
+  - Reusable (4.0.0):
+    - Reusable/Storyboard (= 4.0.0)
+    - Reusable/View (= 4.0.0)
+  - Reusable/Storyboard (4.0.0)
+  - Reusable/View (4.0.0)
   - sqlite3/common (3.17.0)
   - sqlite3/fts (3.17.0):
     - sqlite3/common
@@ -15,14 +20,16 @@ DEPENDENCIES:
   - FBAnnotationClustering
   - FMDB/standalone/FTS
   - GEOSwift
+  - Reusable
 
 SPEC CHECKSUMS:
   FBAnnotationClustering: 0fb150b264030ca72f7c182c94473dd769e9c43a
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   geos: e96c6ca3f3ce02d20feaa8d90d4af383e11e7198
   GEOSwift: 7a3e070ee189ea27d3bcb6ba5244bf69d4f953aa
+  Reusable: 98e5fff1e0e2e00872199699b276dde08ee56c07
   sqlite3: 3675836c3d675e606507595cf4fd65066b9e11f2
 
-PODFILE CHECKSUM: 583997b924a5e2a607971c9227525af89d8cc49b
+PODFILE CHECKSUM: f8baf2352d3fd580fc35fda708fe98bd36fe9524
 
 COCOAPODS: 1.2.0

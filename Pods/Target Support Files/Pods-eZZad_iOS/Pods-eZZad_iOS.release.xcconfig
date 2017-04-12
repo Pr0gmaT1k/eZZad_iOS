@@ -1,11 +1,11 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
 CLANG_CXX_LIBRARY = libstdc++
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/FBAnnotationClustering" "$PODS_CONFIGURATION_BUILD_DIR/FMDB" "$PODS_CONFIGURATION_BUILD_DIR/GEOSwift" "$PODS_CONFIGURATION_BUILD_DIR/geos" "$PODS_CONFIGURATION_BUILD_DIR/sqlite3"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/FBAnnotationClustering" "$PODS_CONFIGURATION_BUILD_DIR/FMDB" "$PODS_CONFIGURATION_BUILD_DIR/GEOSwift" "$PODS_CONFIGURATION_BUILD_DIR/Reusable" "$PODS_CONFIGURATION_BUILD_DIR/geos" "$PODS_CONFIGURATION_BUILD_DIR/sqlite3"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = ${PODS_ROOT}/geos/include ${PODS_ROOT}/geos/capi
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -DFMDB_SQLITE_STANDALONE $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/FBAnnotationClustering/FBAnnotationClustering.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/FMDB/FMDB.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/GEOSwift/GEOSwift.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/geos/geos.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/sqlite3/sqlite3.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "FBAnnotationClustering" -framework "FMDB" -framework "GEOSwift" -framework "geos" -framework "sqlite3"
+OTHER_CFLAGS = $(inherited) -DFMDB_SQLITE_STANDALONE $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/FBAnnotationClustering/FBAnnotationClustering.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/FMDB/FMDB.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/GEOSwift/GEOSwift.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Reusable/Reusable.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/geos/geos.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/sqlite3/sqlite3.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "FBAnnotationClustering" -framework "FMDB" -framework "GEOSwift" -framework "Reusable" -framework "geos" -framework "sqlite3"
 OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
