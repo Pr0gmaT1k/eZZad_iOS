@@ -14,6 +14,17 @@ class ClusterView: MKAnnotationView, NibLoadable {
   //
   // Mark:- IBOutlets
   @IBOutlet private weak var subView: UIView!
+  @IBOutlet private weak var titleLabel: UILabel!
+  
+  // Mark:- Properties
+  var annotationCount : Int? {
+    didSet {
+      guard let count = self.annotationCount else { return }
+      let size = 25 + count
+      self.titleLabel.text = self.annotationCount?.description
+      self.frame = CGRect(x: 0, y: 0, width: size, height: size)
+    }
+  }
   
   //
   // Mark:- Public Funcs

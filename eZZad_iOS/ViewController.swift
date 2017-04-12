@@ -123,7 +123,10 @@ extension ViewController: MKMapViewDelegate {
   
   func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
     switch annotation {
-    case is FBAnnotationCluster: return ClusterView.loadFromNib()
+    case let annotation as FBAnnotationCluster:
+      let clusterView = ClusterView.loadFromNib()
+      clusterView.annotationCount = annotation.annotations.count
+      return clusterView
     default:
       let annotationView = AnnotationView.loadFromNib()
       annotationView.annotation = annotation
