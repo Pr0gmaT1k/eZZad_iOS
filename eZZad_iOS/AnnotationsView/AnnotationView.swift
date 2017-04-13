@@ -12,13 +12,18 @@ import MapKit
 
 class AnnotationView: MKAnnotationView, NibLoadable {
   //
+  // Mark:- IBOutlets
+  @IBOutlet private weak var nameLabel: UILabel!
+  
+  //
   // Mark- Public func
   override func awakeFromNib() {
     super.awakeFromNib()
-    self.frame = CGRect(x: 0, y: 0, width: 22, height: 30)
+    self.frame = CGRect(x: 0, y: 0, width: 100, height: 54)
   }
   
   func setup(pointAnnotation: PointAnnotation) {
     self.annotation = pointAnnotation
+    self.nameLabel.text = pointAnnotation.name
   }
 }
