@@ -83,7 +83,9 @@ class ViewController: UIViewController {
           guard let overlay = subGeometry.mapShape() as? MKOverlay else { break }
           self.mapView.add(overlay)
         }
-      case let geometry as Waypoint: self.clusteringManager.addAnnotations([geometry.mapShape()])
+      case let geometry as Waypoint:
+        let pointAnnotation = PointAnnotation(waypoint: geometry)
+        self.clusteringManager.addAnnotations([pointAnnotation])
       default: break
       }
     }
@@ -127,10 +129,12 @@ extension ViewController: MKMapViewDelegate {
       let clusterView = ClusterView.loadFromNib()
       clusterView.annotationCount = annotation.annotations.count
       return clusterView
-    default:
+    case let annotation as PointAnnotation:
       let annotationView = AnnotationView.loadFromNib()
-      annotationView.annotation = annotation
+      annotationView.setup(pointAnnotation: annotation)
       return annotationView
+    default:
+      return nil
     }
   }
 }

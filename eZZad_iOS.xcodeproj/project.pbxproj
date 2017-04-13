@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6DA3AA280956786E9635703A /* Pods_eZZad_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4483D5EF2362E483F114CC92 /* Pods_eZZad_iOSTests.framework */; };
 		B8393D13021CADD41AFE066D /* Pods_eZZad_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D8396CCE9FD66C1163B248 /* Pods_eZZad_iOSUITests.framework */; };
+		BA0DF4281EA0008D0087301A /* PointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0DF4271EA0008D0087301A /* PointAnnotation.swift */; };
 		BA38B88C1E9EDF9100C78BBF /* ClusterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA38B88A1E9EDF9100C78BBF /* ClusterView.swift */; };
 		BA38B88D1E9EDF9100C78BBF /* ClusterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA38B88B1E9EDF9100C78BBF /* ClusterView.xib */; };
 		BA38B8941E9EE2D000C78BBF /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA38B8921E9EE2D000C78BBF /* AnnotationView.swift */; };
@@ -58,6 +59,7 @@
 		863317413DD7A4759201F2D6 /* Pods-eZZad_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eZZad_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eZZad_iOS/Pods-eZZad_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		A2CDA0BC92E7F746C4E94C3F /* Pods-eZZad_iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eZZad_iOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-eZZad_iOSUITests/Pods-eZZad_iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B9D8396CCE9FD66C1163B248 /* Pods_eZZad_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eZZad_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA0DF4271EA0008D0087301A /* PointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointAnnotation.swift; sourceTree = "<group>"; };
 		BA38B88A1E9EDF9100C78BBF /* ClusterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClusterView.swift; sourceTree = "<group>"; };
 		BA38B88B1E9EDF9100C78BBF /* ClusterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClusterView.xib; sourceTree = "<group>"; };
 		BA38B8921E9EE2D000C78BBF /* AnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 				BAE244B81E6CDD5C0014E833 /* LaunchScreen.storyboard */,
 				BAE244BB1E6CDD5C0014E833 /* Info.plist */,
 				BAAA38501E77500100CD8A06 /* MBTileOverlay.swift */,
+				BA0DF4271EA0008D0087301A /* PointAnnotation.swift */,
 			);
 			path = eZZad_iOS;
 			sourceTree = "<group>";
@@ -524,6 +527,7 @@
 				BA38B88C1E9EDF9100C78BBF /* ClusterView.swift in Sources */,
 				BA38B8941E9EE2D000C78BBF /* AnnotationView.swift in Sources */,
 				BAE244B01E6CDD5C0014E833 /* AppDelegate.swift in Sources */,
+				BA0DF4281EA0008D0087301A /* PointAnnotation.swift in Sources */,
 				BAAA38511E77500100CD8A06 /* MBTileOverlay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

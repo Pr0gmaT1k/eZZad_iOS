@@ -11,8 +11,14 @@ import Reusable
 import MapKit
 
 class AnnotationView: MKAnnotationView, NibLoadable {
+  //
+  // Mark- Public func
   override func awakeFromNib() {
     super.awakeFromNib()
     self.frame = CGRect(x: 0, y: 0, width: 22, height: 30)
+  }
+  
+  func setup(pointAnnotation: PointAnnotation) {
+    self.annotation = pointAnnotation
   }
 }

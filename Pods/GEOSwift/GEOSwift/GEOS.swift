@@ -31,7 +31,7 @@ public typealias CoordinateDegrees = Double
   
   let geometry: OpaquePointer
   internal let destroyOnDeinit: Bool
-  var properties: NSDictionary?
+  public var properties: NSDictionary?
   
   required public init(GEOSGeom: OpaquePointer, destroyOnDeinit: Bool) {
     self.geometry = GEOSGeom
