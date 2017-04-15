@@ -50,7 +50,7 @@ class ViewController: UIViewController {
   
   /** Load GeoJSON From local file */
   private func setupGeoJSON() {
-    addGeoJSON(bundledFileName: "AirportPerimeter")
+    //addGeoJSON(bundledFileName: "AirportPerimeter")
     addGeoJSON(bundledFileName:            "Plots")
     addGeoJSON(bundledFileName:           "Places")
     addGeoJSON(bundledFileName:      "RoadsideBar")
@@ -111,7 +111,8 @@ extension ViewController: MKMapViewDelegate {
     switch overlay {
     case let overlay as MKPolygon:
       let polygonRenderer = MKPolygonRenderer(polygon: overlay)
-      polygonRenderer.lineWidth = 1
+      polygonRenderer.lineWidth = 0.5
+      polygonRenderer.fillColor = UIColor.red.withAlphaComponent(0.25)
       polygonRenderer.strokeColor = UIColor.black.withAlphaComponent(0.5)
       return polygonRenderer
     case let overlay as MKTileOverlay: return MKTileOverlayRenderer(tileOverlay: overlay)

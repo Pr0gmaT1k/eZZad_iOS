@@ -14,6 +14,8 @@ class AnnotationView: MKAnnotationView, NibLoadable {
   //
   // Mark:- IBOutlets
   @IBOutlet private weak var nameLabel: UILabel!
+  @IBOutlet private weak var defaultImageView: UIImageView!
+  @IBOutlet private weak var imageType: UIImageView!
   
   //
   // Mark- Public func
@@ -25,5 +27,9 @@ class AnnotationView: MKAnnotationView, NibLoadable {
   func setup(pointAnnotation: PointAnnotation) {
     self.annotation = pointAnnotation
     self.nameLabel.text = pointAnnotation.name
+    guard let image = pointAnnotation.placeIcon else { return }
+    self.defaultImageView.isHidden = true
+    self.imageType.isHidden = false
+    self.imageType.image = image
   }
 }

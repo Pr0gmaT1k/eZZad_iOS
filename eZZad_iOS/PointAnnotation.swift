@@ -50,7 +50,7 @@ class PointAnnotation: MKPointAnnotation {
     case self.isInfoPoint ?? false: return UIImage(named: "info_point_icon")
     case self.isCanteen ?? false: return UIImage(named: "info_point_icon")
     case self.isHome ?? false: return UIImage(named: "home_icon")
-    default: return UIImage(named: "")
+    default: return nil
     }
   }
   

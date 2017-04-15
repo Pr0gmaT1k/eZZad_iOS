@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -31,24 +33,45 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="acipa_plane_icon" translatesAutoresizingMaskIntoConstraints="NO" id="vNm-63-ozz">
+                    <rect key="frame" x="75" y="230.5" width="22" height="8.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="vNm-63-ozz" secondAttribute="height" multiplier="18:7" id="w3k-jA-VCo"/>
+                    </constraints>
+                </imageView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EqV-lf-hDd">
+                    <rect key="frame" x="79.5" y="228" width="13" height="13"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="EqV-lf-hDd" secondAttribute="height" id="SaU-4G-tfd"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="EqV-lf-hDd" secondAttribute="bottom" constant="13" id="5IB-1J-l10"/>
+                <constraint firstAttribute="bottom" secondItem="vNm-63-ozz" secondAttribute="bottom" constant="15" id="5Z1-ge-5dP"/>
                 <constraint firstAttribute="bottom" secondItem="Ptd-J9-prn" secondAttribute="bottom" id="6w2-8q-blS"/>
+                <constraint firstItem="EqV-lf-hDd" firstAttribute="width" secondItem="Ptd-J9-prn" secondAttribute="width" multiplier="1:1.7" id="BGJ-6p-rRa"/>
+                <constraint firstItem="EqV-lf-hDd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HAV-WB-XiV"/>
                 <constraint firstItem="Ptd-J9-prn" firstAttribute="top" secondItem="odw-PE-wYI" secondAttribute="bottom" constant="10" id="a2j-FX-tDu"/>
+                <constraint firstItem="vNm-63-ozz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eGO-9G-pDG"/>
                 <constraint firstItem="Ptd-J9-prn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="f6R-lS-1tw"/>
                 <constraint firstAttribute="trailing" secondItem="odw-PE-wYI" secondAttribute="trailing" id="hWC-tt-E0A"/>
+                <constraint firstItem="vNm-63-ozz" firstAttribute="width" secondItem="Ptd-J9-prn" secondAttribute="width" id="w0V-mi-tVN"/>
                 <constraint firstItem="odw-PE-wYI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xz3-61-uUT"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="defaultImageView" destination="vNm-63-ozz" id="sx0-CG-dX0"/>
+                <outlet property="imageType" destination="EqV-lf-hDd" id="7Tr-uP-F9j"/>
                 <outlet property="nameLabel" destination="odw-PE-wYI" id="C8z-DJ-zDQ"/>
             </connections>
             <point key="canvasLocation" x="-55" y="1"/>
         </view>
     </objects>
     <resources>
+        <image name="acipa_plane_icon" width="180" height="70"/>
         <image name="map_pin" width="26" height="36"/>
     </resources>
 </document>
