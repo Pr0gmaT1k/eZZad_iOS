@@ -112,8 +112,8 @@ extension ViewController: MKMapViewDelegate {
     case let overlay as MKPolygon:
       let polygonRenderer = MKPolygonRenderer(polygon: overlay)
       polygonRenderer.lineWidth = 0.5
-      polygonRenderer.fillColor = UIColor.red.withAlphaComponent(0.25)
-      polygonRenderer.strokeColor = UIColor.black.withAlphaComponent(0.5)
+      polygonRenderer.fillColor = UIColor.black.withAlphaComponent(0.2)
+      polygonRenderer.strokeColor = UIColor.red.withAlphaComponent(0.2)
       return polygonRenderer
     case let overlay as MKTileOverlay: return MKTileOverlayRenderer(tileOverlay: overlay)
     default: return MKOverlayRenderer() // empty renderer.

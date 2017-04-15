@@ -48,7 +48,7 @@ class PointAnnotation: MKPointAnnotation {
     switch true {
     case self.isInfirmary ?? false: return UIImage(named: "infirmary_icon")
     case self.isInfoPoint ?? false: return UIImage(named: "info_point_icon")
-    case self.isCanteen ?? false: return UIImage(named: "info_point_icon")
+    case self.isCanteen ?? false: return UIImage(named: "canteen_icon")
     case self.isHome ?? false: return UIImage(named: "home_icon")
     default: return nil
     }
