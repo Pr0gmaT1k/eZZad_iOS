@@ -20,7 +20,7 @@ class PointAnnotation: MKPointAnnotation {
     static let isCanteen = "CANTINE"
     static let isComOrga = "ORGA_COM"
     static let isInfirmary = "INFIRMERIE"
-    static let infoPoint = "POINT_INFO"
+    static let isInfoPoint = "POINT_INFO"
     static let isPeasant = "PAYSANEXPU"
     static let isLocal = "LOC_EXPUL"
     static let isExpulsable = "NON_EXPUL"
@@ -39,11 +39,20 @@ class PointAnnotation: MKPointAnnotation {
   var isCanteen: Bool? = false
   var isComOrga: Bool? = false
   var isInfirmary: Bool? = false
-  var infoPoint: Bool? = false
+  var isInfoPoint: Bool? = false
   var isPeasant: Bool? = false
   var isLocal: Bool? = false
   var isExpulsable: Bool? = true
   var isMouvement: Bool? = false
+  var placeIcon: UIImage? {
+    switch true {
+    case self.isInfirmary ?? false: return UIImage(named: "infirmary_icon")
+    case self.isInfoPoint ?? false: return UIImage(named: "info_point_icon")
+    case self.isCanteen ?? false: return UIImage(named: "info_point_icon")
+    case self.isHome ?? false: return UIImage(named: "home_icon")
+    default: return UIImage(named: "")
+    }
+  }
   
   //
   // Mark:- Public func
@@ -63,7 +72,7 @@ class PointAnnotation: MKPointAnnotation {
     isCanteen = properties[PropertiesKey.isCanteen] as? String == PropertiesValue.yes
     isComOrga = properties[PropertiesKey.isComOrga] as? String == PropertiesValue.yes
     isInfirmary = properties[PropertiesKey.isInfirmary] as? String == PropertiesValue.yes
-    infoPoint = properties[PropertiesKey.infoPoint] as? String == PropertiesValue.yes
+    isInfoPoint = properties[PropertiesKey.isInfoPoint] as? String == PropertiesValue.yes
     isPeasant = properties[PropertiesKey.isPeasant] as? String == PropertiesValue.yes
     isLocal = properties[PropertiesKey.isLocal] as? String == PropertiesValue.yes
     isExpulsable = properties[PropertiesKey.isExpulsable] as? String == PropertiesValue.yes
